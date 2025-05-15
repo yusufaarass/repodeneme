@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUILD.WEB4 - Construction Technology Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #001F3F;
+            color: #E0E0E0;
+        }
+        
+        .neomorphic-card {
+            border-radius: 12px;
+            background: #001F3F;
+            box-shadow: 5px 5px 10px #00152e, 
+                        -5px -5px 10px #002950;
+            border: 1px solid rgba(112, 112, 112, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .neomorphic-card:hover {
+            box-shadow: 8px 8px 15px #00152e, 
+                        -8px -8px 15px #002950;
+            transform: translateY(-2px);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #004080;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            color: #004080;
+            transform: translateY(-2px);
+        }
+        
+        .btn-primary {
+            background-color: #004080;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0055a5;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header Section -->
+    <header class="w-full py-6 px-4 md:px-12 lg:px-24">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <div class="text-2xl md:text-3xl font-light tracking-wider">
+                    <span class="font-bold">BUILD</span><span class="text-gray-300">.WEB4</span>
+                </div>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="nav-link text-gray-300 hover:text-white">AI Tools</a>
+                <a href="#" class="nav-link text-gray-300 hover:text-white">Marketplace</a>
+                <a href="#" class="nav-link text-gray-300 hover:text-white">Dijital Twin</a>
+                <a href="#" class="nav-link text-gray-300 hover:text-white">IoT</a>
+                <a href="#" class="nav-link text-white font-medium">Sign Up</a>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-300">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex-grow flex items-center px-4 md:px-12 lg:px-24 py-12">
+        <div class="w-full flex flex-col md:flex-row items-center">
+            <!-- Left Content -->
+            <div class="w-full md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-3xl md:text-5xl font-light mb-6 leading-tight">
+                    <span class="font-medium">Building Tomorrow's</span><br>
+                    <span class="text-gray-300">Infrastructure Today</span>
+                </h1>
+                <p class="text-gray-400 mb-8 max-w-lg leading-relaxed">
+                    BUILD.WEB4 revolutionizes construction technology with AI-powered tools, digital twin integration, and IoT solutions for smarter, more efficient building processes.
+                </p>
+                <div class="flex space-x-4">
+                    <button class="btn-primary px-6 py-3 rounded-full text-white font-medium">
+                        Explore Solutions
+                    </button>
+                    <button class="px-6 py-3 rounded-full border border-gray-600 text-gray-300 font-medium hover:border-gray-400 hover:text-white transition">
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Right Content - Neomorphic Cards -->
+            <div class="w-full md:w-1/2 grid grid-cols-2 gap-6">
+                <div class="neomorphic-card p-6 flex flex-col items-center justify-center">
+                    <div class="text-4xl mb-4 text-gray-300">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">AI Tools</h3>
+                    <p class="text-sm text-gray-400 text-center">Smart construction planning and optimization</p>
+                </div>
+                <div class="neomorphic-card p-6 flex flex-col items-center justify-center">
+                    <div class="text-4xl mb-4 text-gray-300">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Marketplace</h3>
+                    <p class="text-sm text-gray-400 text-center">Materials, equipment and services</p>
+                </div>
+                <div class="neomorphic-card p-6 flex flex-col items-center justify-center">
+                    <div class="text-4xl mb-4 text-gray-300">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Dijital Twin</h3>
+                    <p class="text-sm text-gray-400 text-center">Virtual replicas for better management</p>
+                </div>
+                <div class="neomorphic-card p-6 flex flex-col items-center justify-center">
+                    <div class="text-4xl mb-4 text-gray-300">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">IoT</h3>
+                    <p class="text-sm text-gray-400 text-center">Connected construction sites</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer/Social Section -->
+    <footer class="w-full py-6 px-4 md:px-12 lg:px-24">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-gray-500 text-sm mb-4 md:mb-0">
+                © 2023 BUILD.WEB4 Technologies. All rights reserved.
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="social-icon text-gray-400 hover:text-white">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon text-gray-400 hover:text-white">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon text-gray-400 hover:text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon text-gray-400 hover:text-white">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for mobile menu toggle (would be expanded in production)
+        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
+            alert('Mobile menu would open here in a complete implementation');
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Unnab/build-web4-a-l-sayfas" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
